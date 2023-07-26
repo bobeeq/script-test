@@ -1,1 +1,1 @@
-alert('TEST PRZESZEDŁ POMYŚLNIE!');
+console.log('TEST PRZESZEDŁ POMYŚLNIE!');
