@@ -2178,7 +2178,7 @@ var USER_CFG = {
   
   class TKBestsellersList extends TKStandardList {
     getContainers () {
-      return qsa('ul#pagi-slide')
+      return qsa('#content .row .toggle-view.grid')
     }
   
     getBoxes (container) {
