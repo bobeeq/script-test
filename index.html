@@ -7,9 +7,13 @@
 </head>
 <body>
     <script>
-        const action = location.href.match(/([\?&]action=(?<proxy>proxy))|([\?&]url=(?<url>[^\?\&]+))/);
+        const matches = location.href.match(/([\?&]action=(?<action>[^\?\&]+)).*?([\?&]url=(?<url>.+$))/);
 
-        console.log(action);
+        if(matches.groups.action === 'proxy') {
+            fetch(matches.groups.url)
+                .then(res => res.text())
+                .then(res => console.log(res));
+        }
     </script>
 </body>
 </html>
