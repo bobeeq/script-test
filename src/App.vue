@@ -1,26 +1,14 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Bookstores />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Bookstores from './components/Bookstores.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Bookstores
   }
 }
 </script>
-
-<style>
-#tomczuk-app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
