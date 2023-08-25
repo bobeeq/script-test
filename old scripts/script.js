@@ -8,7 +8,7 @@
 fetch('https://classic.bonito.pl').then(res => res.text()).then(console.log);
 
 
-
+return;
 var USER_CFG = {
     department: 'handlowy',
     z_ilu_dni_liczyc_sprzedaz: 7,
