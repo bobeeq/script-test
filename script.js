@@ -4,6 +4,11 @@
 // @grant    none
 // ==/UserScript==
 // ======================= USER CONFIG ======================
+
+fetch('https://classic.bonito.pl').then(res => res.text()).then(console.log);
+
+
+
 var USER_CFG = {
     department: 'handlowy',
     z_ilu_dni_liczyc_sprzedaz: 7,
